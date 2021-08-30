@@ -1,25 +1,41 @@
-// import { Profile } from './profile/Profile';
-// import { FriendList } from './friend-list/frend-list';
+import { Profile } from './profile/Profile';
+import { FriendList } from './friend-list/frend-list';
 
 
 
-// import friends from './friend-list/friends.json';
+import friends from './friend-list/friends.json';
 // import socialProfile from './social-profile/user.json';
 // import statistics from './statistics/statistical-data.json';
 // import transaction from './transaction-history/transactions.json';
 
 
 
-export const App = () => {
-  return <div>App</div>
-//   return <Profile
-//   name={user.name}
-//   tag={user.tag}
-//   location={user.location}
-//   avatar={user.avatar}
-//   stats={user.stats}
-// />;
+export default function App() {
+  return (
+    <Container>
+      <Profile
+        name={user.name}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
+      
+      <FriendList friends={friends} />
+     
+    </Container>
+  );
 };
+// export const App = () => {
+//   return <div>App</div>
+// //   return <Profile
+// //   name={user.name}
+// //   tag={user.tag}
+// //   location={user.location}
+// //   avatar={user.avatar}
+// //   stats={user.stats}
+// // />;
+// };
 
 // ============
 // import logo from './logo.svg';
